@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d30ed1724b.js" crossorigin="anonymous"></script>
+    <title>faucet</title>
+</head>
+
+<body>
+    <div class="tittle">
+        <h2>faucet</h2>
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <!-------------------LED1-------------------------->
+            <div class="box">
+                <div>
+                    <div class="bulb1">
+                        <i class="fa-solid fa-faucet"></i>
+                    </div>
+                    <div class="switch">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                    </div>
+                </div>
+                <h3>faucet 1</h3>
+                <p>Kitchen</p>
+            </div>
+
+
+            <!-------------------LED5-------------------------->
+            <div class="box">
+                <div>
+                    <div class="bulb5">
+                        <i class="fa-solid fa-faucet"></i>
+                    </div>
+                    <div class="switch">
+                        <input type="checkbox" id="check5">
+                        <label for="check5"></label>
+                    </div>
+                </div>
+                <h3>faucet 5</h3>
+                <p>Bathroom </p>
+            </div>
+
+            <!-------------------LED7-------------------------->
+            <div class="box">
+                <div>
+                    <div class="bulb7">
+                        <i class="fa-solid fa-faucet"></i>
+                    </div>
+                    <div class="switch">
+                        <input type="checkbox" id="check7">
+                        <label for="check7"></label>
+                    </div>
+                </div>
+                <h3>LED LAMP 7</h3>
+                <p>Bathroom 2</p>
+            </div>
+            <!-------------------LED8-------------------------->
+            <div class="box">
+                <div>
+                    <div class="bulb8">
+                        <i class="fa-solid fa-faucet"></i>
+                    </div>
+                    <div class="switch">
+                        <input type="checkbox" id="check8">
+                        <label for="check8"></label>
+                    </div>
+                </div>
+                <h3>LED LAMP 8</h3>
+                <p>living room</p>
+            </div>
+            <!-------------------Button------------------------>
+            <div class="container1">
+                <div class="contenido1">
+                    <a href="tv.html" class="btnext">BACK</a>
+
+                </div>
+
+            </div>
+            <!-------------------script------------------------>
+            <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Montserrat:ital,wght@1,900&family=Phudu:wght@600;700&display=swap');
+
+    /*cards*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+
+    html,
+    body {
+        height: 100%;
+        text-align: center;
+        place-items: center;
+        background: #fff;
+    }
+
+    .tittle h1 {
+        margin: 50px;
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 50px;
+    }
+
+    .tittle h2 {
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 35px;
+    }
+
+    .container {
+        padding: 15px 9%;
+        padding-bottom: 100px;
+    }
+
+    .container .heading {
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        padding-bottom: 15px;
+        color: #11101b;
+        font-size: 50px;
+    }
+
+    .container .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 15px;
+    }
+
+    .container .box-container .box {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px 20px;
+        background: rgba(0, 0, 0, .5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+    }
+
+    .container .box-container .box img {
+        height: 200px;
+    }
+
+    .container .box-container .box h3 {
+        font-family: 'Bebas Neue', sans-serif;
+        color: #444;
+        font-size: 22px;
+        padding: 10px 0;
+
+    }
+
+    .container .box-container .box p {
+        font-family: 'Bebas Neue', sans-serif;
+        color: #183153;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .container .box-container .box:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+        transform: scale(1.03);
+    }
+
+    /*LEDSTYLE*/
+    .bulb1 {
+        margin-bottom: 30px;
+    }
+
+    .bulb1 i {
+        color: #183153;
+        font-size: 100px;
+        transition: all 0.3s;
+    }
+
+    .bulb1 i.on {
+        color: #fddb09;
+        text-shadow: 0 0 100px #ffe500;
+    }
+
+
+    /*LED5*/
+    .bulb5 {
+        margin-bottom: 30px;
+    }
+
+    .bulb5 i {
+        color: #183153;
+        font-size: 100px;
+        transition: all 0.3s;
+    }
+
+    .bulb5 i.on {
+        color: #fddb09;
+        text-shadow: 0 0 100px #ffe500;
+    }
+
+
+    /*LED7*/
+    .bulb7 {
+        margin-bottom: 30px;
+    }
+
+    .bulb7 i {
+        color: #183153;
+        font-size: 100px;
+        transition: all 0.3s;
+    }
+
+    .bulb7 i.on {
+        color: #fddb09;
+        text-shadow: 0 0 100px #ffe500;
+    }
+
+    /*LED8*/
+    .bulb8 {
+        margin-bottom: 30px;
+    }
+
+    .bulb8 i {
+        color: #183153;
+        font-size: 100px;
+        transition: all 0.3s;
+    }
+
+    .bulb8 i.on {
+        color: #fddb09;
+        text-shadow: 0 0 100px #ffe500;
+    }
+
+    /*Switch*/
+    .switch>input {
+        display: none;
+    }
+
+    .switch>label {
+        margin: auto;
+        display: block;
+        position: relative;
+        background: #d2d9e4;
+        width: 112px;
+        height: 56px;
+        border-radius: 30px;
+        border: 2px solid #cad3dc;
+        cursor: pointer;
+    }
+
+    .switch>label:before {
+        content: "";
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        left: 0;
+        top: 0;
+        transition: all 0.3s;
+    }
+
+    .switch>input:checked+label {
+        background: #183153;
+    }
+
+    .switch>input:checked+label:before {
+        left: 56px;
+    }
+
+    /*next*/
+    .container1 .contenido1 a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 4rem;
+        margin-top: 10px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #183153;
+        border: 1px solid #183153;
+        border-radius: 4px;
+        transition: all 400ms ease;
+
+
+    }
+
+    .container1 .contenido1 a:hover {
+        background: #183153;
+        color: #fff;
+
+
+    }
+
+
+
+
+
+    @media (max-width:768px) {
+        .container {
+            padding: 20px;
+        }
+    }
+</style>
