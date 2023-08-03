@@ -44,3 +44,79 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Datos inválidos, intenta nuevamente.";
     }
 }
+
+/* if (isset($_POST['buscar'])){
+    $id = $_POST['id'];
+
+    $sql = "SELECT * FROM user WHERE id = $id";
+    $result = $conn -> query($sql);
+
+    if ($result -> num_rows > 0){
+        $row = $result -> fetch_assoc();
+        echo "ID: " . $row["id"] . "<br>";
+        echo "Username: " . $row["username"] . "<br>";
+        echo "Name: " . $row["name"] . "<br>";
+        echo "Password: " . $row["password"] . "<br>";
+        echo "E-mail: " . $row["email"] . "<br>";
+        echo "Age: " . $row["age"] . "<br>";
+        echo "Rol: " . $row["rol"] . "</td>";
+    } else {
+        echo "No se encontró ningún empleado con el ID proporcionado.";
+    }
+}
+ */
+?>
+<!--  /*    // Buscar user por ID
+    
+    if (isset($_POST['Buscar'])) {
+        $id = $_POST['id'];
+
+        $sql = "SELECT * FROM empleados WHERE id = $id";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            echo "<h2>Información del empleado:</h2>";
+            echo "ID: " . $row["id"] . "<br>";
+            echo "Usernname: " . $row["username"] . "<br>";
+            echo "Name: " . $row["name"] . "<br>";
+            echo "Password: " . $row["password"] . "<br>";
+            echo "E-mail:" . $row["email"] . "<br>";
+            echo "Age: " . $row["age"] . "<br>";
+            echo "Rol: " . $row["rol"] . "</td>";
+        } else {
+            echo "No se encontró ningún empleado con el ID proporcionado.";
+        }
+    }
+
+    //ELIMINAR usuario
+    if (isset($_POST['Eliminar'])) {
+        $id = $_POST['id'];
+
+        $sql = "DELETE FROM user WHERE id = $id";
+        if ($conn->query($sql) === TRUE) {
+            header("Location: registrar.php");
+            exit();
+        } else {
+            echo "<script>alert('Error al eliminar empleado: " . $conn->error .
+                "');</script>";
+        }
+
+    }
+
+    if (isset($_POST['Modificar'])) {
+        $id_up = $_POST['id-up'];
+        $nombre_update = $_POST['nombre-update'];
+
+        $sql = "UPDATE user SET NOMBRE='$nombre_update' WHERE ID = '$id_up'";
+        if ($conn->query($sql) === TRUE) {
+            header("Location: registro.php");
+            exit();
+        } else {
+            echo "<script>alert('Error al actualizar empleado: " . $conn->error .
+                "');</script>";
+        }
+
+    }
+
+ */ -->

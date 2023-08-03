@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="buscar.css">
-    <title>BUSCAR</title>
-</head>
-
-<body>
-
-    <div class="login-box">
-        <h2>Register</h2>
-        <form action="./buscar.php" method="POST">
-            <div class="user-box">
-                <input type="text" name="id" id="id">
-                <label>ID</label>
-            </div>
-            <button name="buscar" id="buscar">Enviar</button>
-        </form>
-
-    </div>
-</body>
-
-</html>
 <?php
 
 include 'conexion.php';
